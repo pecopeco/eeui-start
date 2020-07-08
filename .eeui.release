@@ -1,0 +1,9 @@
+{
+	"appName": "eeui-start",
+	"applicationID": "app.eeui.simple",
+	"versionCode": "1",
+	"versionName": "1.0",
+	"bundleIdentifier": "app.eeui.simple",
+	"CFBundleVersion": "1",
+	"CFBundleShortVersionString": "1.0"
+}
