@@ -184,7 +184,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": function($event) {
         _vm.go({
-          path: 'root://pages/home/detail.js',
+          path: '/home/detail',
           query: {
             type: 'home'
           }

@@ -1,13 +1,13 @@
 const eeui = app.requireModule('eeui')
 
 Vue.mixin({
-	data() {
+	data () {
 		return {
 		}
 	},
 	methods: {
 		go (obj) {
-			eeui.openPage({url: obj.path, params: obj.query})
+			eeui.openPage({url: 'root://pages' + obj.path + '.js', params: obj.query})
 		},
 		toast (val) {
 			eeui.toast({message: val, gravity: 'middle'})

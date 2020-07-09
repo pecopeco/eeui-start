@@ -10,7 +10,7 @@ Vue.mixin({
   methods: {
     go: function go(obj) {
       eeui.openPage({
-        url: obj.path,
+        url: 'root://pages' + obj.path + '.js',
         params: obj.query
       });
     },

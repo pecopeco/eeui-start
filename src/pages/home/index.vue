@@ -2,7 +2,7 @@
   .home
     .text home
     image.logo(src="root://assets/logo-white.png")
-    button.btn(model="blue" text="go detail" @click="go({path: 'root://pages/home/detail.js', query: {type: 'home'}})")
+    button.btn(model="blue" text="go detail" @click="go({path: '/home/detail', query: {type: 'home'}})")
 </template>
 
 <script>
