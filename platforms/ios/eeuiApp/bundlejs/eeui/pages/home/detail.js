@@ -89,16 +89,16 @@ if(typeof eeuiLog=="undefined"){var eeuiLog={_:function(t,e){var s=e.map(functio
 /************************************************************************/
 /******/ ({
 
-/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib/index.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/home/detail.vue":
+/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib/index.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/components/topbar.vue":
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/home/detail.vue ***!
+  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/components/topbar.vue ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _entry_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../entry.js */ "./src/entry.js");
+/* harmony import */ var _entry_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../entry.js */ "./src/entry.js");
 /* harmony import */ var _entry_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_entry_js__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
@@ -117,7 +117,54 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {};
+  },
+  methods: {},
+  mounted: function mounted() {}
+});
+
+/***/ }),
+
+/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib/index.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/home/detail.vue":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/home/detail.vue ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _entry_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../entry.js */ "./src/entry.js");
+/* harmony import */ var _entry_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_entry_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_topbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/topbar */ "./src/components/topbar.vue");
+/* harmony import */ var _components_topbar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_topbar__WEBPACK_IMPORTED_MODULE_1__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    topbar: _components_topbar__WEBPACK_IMPORTED_MODULE_1___default.a
+  },
   data: function data() {
     return {
       type: app.config.params.type
@@ -138,11 +185,29 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+module.exports = {}
+
+/***/ }),
+
+/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!./node_modules/stylus-loader/index.js?{\"sourceMap\":false}!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-bf1f78e4!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/components/topbar.vue":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!./node_modules/stylus-loader?{"sourceMap":false}!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-bf1f78e4!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/components/topbar.vue ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
 module.exports = {
-  "detail": {
-    "display": "flex",
-    "alignItems": "center",
-    "justifyContent": "center"
+  "topbar": {
+    "width": "750",
+    "height": "100"
+  },
+  "navbar": {
+    "width": "750",
+    "height": "100"
+  },
+  "title": {
+    "color": "#ffffff",
+    "fontSize": "26"
   }
 }
 
@@ -158,13 +223,90 @@ module.exports = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["detail"]
-  }, [_c('div', {
+  }, [_c('topbar'), _c('div', {
     staticClass: ["text"]
   }, [_vm._v("detail")]), _c('div', {
     staticClass: ["query"]
-  }, [_vm._v("get:" + _vm._s(_vm.type))])])
+  }, [_vm._v("get:" + _vm._s(_vm.type))])], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-bf1f78e4!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/components/topbar.vue":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-bf1f78e4!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/components/topbar.vue ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["topbar"]
+  }, [_c('navbar', {
+    staticClass: ["navbar"]
+  }, [_c('navbar-item', {
+    attrs: {
+      "type": "back"
+    }
+  }), _c('navbar-item', {
+    attrs: {
+      "type": "title"
+    }
+  }, [_c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("标题")])])], 1)], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ "./src/components/topbar.vue":
+/*!***********************************!*\
+  !*** ./src/components/topbar.vue ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader!../../node_modules/stylus-loader?{"sourceMap":false}!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter?id=data-v-bf1f78e4!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=styles&index=0!./topbar.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!./node_modules/stylus-loader/index.js?{\"sourceMap\":false}!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-bf1f78e4!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/components/topbar.vue")
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader!babel-loader!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=script&index=0!./topbar.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib/index.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/components/topbar.vue")
+
+/* template */
+var __vue_template__ = __webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler?id=data-v-bf1f78e4!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader?raw&engine=pug!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=template&index=0!./topbar.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-bf1f78e4!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/components/topbar.vue")
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {eeuiLog.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "C:\\Users\\1\\Desktop\\project\\eeui-start\\src\\components\\topbar.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-bf1f78e4"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
 
 /***/ }),
 

@@ -1,12 +1,17 @@
 <template lang="pug">
   .detail
+    topbar
     .text detail
     .query get:{{type}}
 </template>
 
 <script>
+import topbar from '../../components/topbar'
 
 export default {
+  components: {
+    topbar
+  },
   data () {
     return {
       type: app.config.params.type
@@ -23,8 +28,5 @@ export default {
 <style scoped lang="stylus">
 
 .detail {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 </style>

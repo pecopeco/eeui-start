@@ -370,10 +370,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "underlineColor": "#f2f2f2"
     }
   }, [_c('tabbar-page', {
-    ref: "name_1",
+    ref: "home",
     staticClass: ["page"],
     attrs: {
-      "tabName": "name_1",
       "title": "首页",
       "selectedIcon": "tb-home-fill"
     },
@@ -381,10 +380,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "refreshListener": _vm.refreshListener
     }
   }, [_c('home')], 1), _c('tabbar-page', {
-    ref: "name_2",
+    ref: "my",
     staticClass: ["page"],
     attrs: {
-      "tabName": "name_2",
       "title": "我的",
       "message": "3",
       "selectedIcon": "tb-my-fill"
