@@ -14,7 +14,9 @@ export default {
   },
   methods: {
   },
-  mounted () {
+  async mounted () {
+    let res = await this.http.post('http://testapi.talkdoo.com:9010/1.0/publicapi/summary/get/055b7b7ba68b4468abc09041edaad3ef/ea0920f6b7b2450e98e9db521403b0d9/')
+    console.log(res)
     this.toast('mounted')
   }
 }

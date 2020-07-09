@@ -23,8 +23,8 @@ Vue.mixin({
     http: function http(url) {
       var form = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
       var type = arguments.length > 2 ? arguments[2] : undefined;
+      var requestUrl; // 拦截重复请求
 
-      // 拦截重复请求
       if (requestUrl === url && this.isObjectValueEqual(requestForm, form)) {
         return;
       }
@@ -43,6 +43,7 @@ Vue.mixin({
         data: compleForm
       }, function (res) {
         if (res.code === 200) {
+          eeuiLog.log(res.result);
           setTimeout(function () {
             requestUrl = '';
             requestForm = {};
@@ -103,5 +104,7 @@ Vue.mixin({
       return true;
     }
   },
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    this.setHttp();
+  }
 });

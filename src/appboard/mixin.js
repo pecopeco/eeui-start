@@ -13,6 +13,7 @@ Vue.mixin({
 			eeui.toast({message: val, gravity: 'middle'})
 		},
 		http (url, form = {}, type) {
+      let requestUrl
       // 拦截重复请求
       if (requestUrl === url && this.isObjectValueEqual(requestForm, form)) {
         return
@@ -26,12 +27,13 @@ Vue.mixin({
       // }
       // Object.assign(compleForm, presetForm)
 			let transUrl = url.indexOf("http") !== -1 ? url : config.api_url + url
-			return eeui.ajax({
+			eeui.ajax({
 				url: transUrl,
 				method: type,
 				data: compleForm
 			}, (res) => {
 				if (res.code === 200) {
+          console.log(res.result)
 					setTimeout(() => {
 						requestUrl = ''
 						requestForm = {}
@@ -76,5 +78,6 @@ Vue.mixin({
     }
 	},
 	mounted () {
+    this.setHttp()
 	}
 })
