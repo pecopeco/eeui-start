@@ -1,32 +1,41 @@
 <template lang="pug">
   .body
-    .text 123
-    image.logo(src="root://assets/logo-white.png")
+    tabbar.tabbar(ref="reflectName" tabType="bottom" underlineGravity=1 underlineHeight=1 underlineColor="#f2f2f2")
+      tabbar-page.page(ref="name_1" @refreshListener="refreshListener" tabName="name_1" title="首页" selectedIcon="tb-home-fill")
+        home
+      tabbar-page.page(ref="name_2" @refreshListener="refreshListener" tabName="name_2" title="我的" message="3" selectedIcon="tb-my-fill")
+        my
 </template>
 
 <script>
+import home from './home'
+import my from './my'
 
 export default {
+  components: {
+    home,
+    my
+  },
   data () {
     return {
     }
   },
   methods: {
-    getTips () {
-      this.tips()
-    }
   },
   mounted () {
-    this.getTips()
   }
 }
 </script>
 
 <style scoped lang="stylus">
 
-.logo {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+.body {
+}
+.tabbar  {
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+.page {
+  width: 750px;
 }
 </style>
