@@ -155,11 +155,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
-    return {};
+    return {
+      token: eeui.getCaches('token')
+    };
   },
-  methods: {},
+  methods: {
+    logout: function logout() {
+      eeui.clearAllCaches();
+      eeui.setCustomConfig('homePage', 'login.js');
+      this.go('/login');
+    }
+  },
   mounted: function mounted() {}
 });
 
@@ -174,12 +184,20 @@ __webpack_require__.r(__webpack_exports__);
 
 module.exports = {
   "my": {
-    "flex": 1
+    "flex": 1,
+    "display": "flex",
+    "alignItems": "center",
+    "justifyContent": "center"
   },
   "logo": {
     "width": "100",
     "height": "100",
     "backgroundColor": "#ff0000"
+  },
+  "btn": {
+    "width": "200",
+    "height": "80",
+    "marginTop": "50"
   }
 }
 
@@ -218,19 +236,30 @@ module.exports = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["my"]
   }, [_c('div', {
     staticClass: ["text"]
-  }, [_vm._v("my")]), _c('image', {
+  }, [_vm._v("my")]), _c('div', {
+    staticClass: ["text"]
+  }, [_vm._v("token:" + _vm._s(_vm.token))]), _c('image', {
     staticClass: ["logo"],
     attrs: {
       "src": "root://assets/logo-white.png"
     }
-  })])
-}]}
+  }), _c('button', {
+    staticClass: ["btn"],
+    attrs: {
+      "model": "red",
+      "text": "退出登录"
+    },
+    on: {
+      "click": function($event) {
+        _vm.logout()
+      }
+    }
+  })], 1)
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),

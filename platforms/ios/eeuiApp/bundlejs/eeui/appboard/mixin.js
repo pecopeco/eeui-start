@@ -8,10 +8,20 @@ Vue.mixin({
     return {};
   },
   methods: {
-    go: function go(obj) {
+    go: function go(key) {
+      var obj = {};
+
+      if (_typeof(key) === 'object') {
+        obj = JSON.parse(JSON.stringify(key));
+      } else {
+        obj.path = key;
+        obj.query = {};
+      }
+
       eeui.openPage({
         url: 'root://pages' + obj.path + '.js',
-        params: obj.query
+        params: obj.query || {},
+        statusBarType: obj.statusBarType || 'normal'
       });
     },
     goBack: function goBack() {

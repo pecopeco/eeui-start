@@ -1,6 +1,6 @@
 {
 	"serviceUrl": "",
-	"homePage": "",
+	"homePage": "login.js",
 	"homePageParams": {
 		"statusBarType": "immersion"
 	},
@@ -46,5 +46,5 @@
 	},
 	"socketHost": "192.168.0.135",
 	"socketPort": 8880,
-	"socketHome": "http://192.168.0.135:9990/pages/index.js"
+	"socketHome": "http://192.168.0.135:9990/pages/login.js"
 }
