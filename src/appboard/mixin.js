@@ -8,7 +8,10 @@ Vue.mixin({
 	methods: {
 		go (obj) {
 			eeui.openPage({url: 'root://pages' + obj.path + '.js', params: obj.query})
-		},
+    },
+    goBack () {
+      eeui.closePage()
+    },
 		toast (val) {
 			eeui.toast({message: val, gravity: 'middle'})
 		},

@@ -29,6 +29,7 @@ export default {
 .navbar {
   width: 750px;
   height: 100px;
+  background-color: #d73a49;
 }
 .title {
   color: #fff;

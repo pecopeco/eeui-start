@@ -1,16 +1,15 @@
 <template lang="pug">
   .detail
-    topbar
+    headnav
     .text detail
     .query get:{{type}}
+    button.btn(model="blue" text="go back" @click="goBack()")
 </template>
 
 <script>
-import topbar from '../../components/topbar'
 
 export default {
   components: {
-    topbar
   },
   data () {
     return {
@@ -28,5 +27,10 @@ export default {
 <style scoped lang="stylus">
 
 .detail {
+}
+.btn {
+  width: 200px;
+  height: 80px;
+  margin-top: 50px;
 }
 </style>

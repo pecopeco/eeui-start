@@ -89,6 +89,45 @@ if(typeof eeuiLog=="undefined"){var eeuiLog={_:function(t,e){var s=e.map(functio
 /************************************************************************/
 /******/ ({
 
+/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib/index.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/components/headnav.vue":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/components/headnav.vue ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _entry_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../entry.js */ "./src/entry.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {};
+  },
+  methods: {},
+  mounted: function mounted() {}
+});
+
+/***/ }),
+
 /***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib/index.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/home/index.vue":
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/home/index.vue ***!
@@ -99,7 +138,6 @@ if(typeof eeuiLog=="undefined"){var eeuiLog={_:function(t,e){var s=e.map(functio
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _entry_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../entry.js */ "./src/entry.js");
-/* harmony import */ var _entry_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_entry_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
 //
@@ -141,7 +179,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _this.http.post('http://testapi.talkdoo.com:9010/1.0/publicapi/summary/get/055b7b7ba68b4468abc09041edaad3ef/ea0920f6b7b2450e98e9db521403b0d9/');
+              return _this.http.post('http://xxx.com');
 
             case 2:
               res = _context.sent;
@@ -189,6 +227,31 @@ module.exports = {
 
 /***/ }),
 
+/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!./node_modules/stylus-loader/index.js?{\"sourceMap\":false}!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-c3747bfa!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/components/headnav.vue":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!./node_modules/stylus-loader?{"sourceMap":false}!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-c3747bfa!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/components/headnav.vue ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "topbar": {
+    "width": "750",
+    "height": "100"
+  },
+  "navbar": {
+    "width": "750",
+    "height": "100",
+    "backgroundColor": "#d73a49"
+  },
+  "title": {
+    "color": "#ffffff",
+    "fontSize": "26"
+  }
+}
+
+/***/ }),
+
 /***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-4ec60fb3!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/pages/home/index.vue":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-4ec60fb3!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/pages/home/index.vue ***!
@@ -223,6 +286,34 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   })], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-c3747bfa!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/components/headnav.vue":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-c3747bfa!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/components/headnav.vue ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["topbar"]
+  }, [_c('navbar', {
+    staticClass: ["navbar"]
+  }, [_c('navbar-item', {
+    attrs: {
+      "type": "back"
+    }
+  }), _c('navbar-item', {
+    attrs: {
+      "type": "title"
+    }
+  }, [_c('text', {
+    staticClass: ["title"]
+  }, [_vm._v("标题")])])], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
@@ -992,17 +1083,69 @@ try {
 
 /***/ }),
 
+/***/ "./src/components/headnav.vue":
+/*!************************************!*\
+  !*** ./src/components/headnav.vue ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader!../../node_modules/stylus-loader?{"sourceMap":false}!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter?id=data-v-c3747bfa!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=styles&index=0!./headnav.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!./node_modules/stylus-loader/index.js?{\"sourceMap\":false}!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-c3747bfa!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/components/headnav.vue")
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader!babel-loader!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=script&index=0!./headnav.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib/index.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/components/headnav.vue")
+
+/* template */
+var __vue_template__ = __webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler?id=data-v-c3747bfa!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader?raw&engine=pug!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=template&index=0!./headnav.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-c3747bfa!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/components/headnav.vue")
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {eeuiLog.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "C:\\Users\\1\\Desktop\\project\\eeui-start\\src\\components\\headnav.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-c3747bfa"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
 /***/ "./src/entry.js":
 /*!**********************!*\
   !*** ./src/entry.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_headnav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/headnav */ "./src/components/headnav.vue");
+/* harmony import */ var _components_headnav__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_headnav__WEBPACK_IMPORTED_MODULE_0__);
 // 注意：修改此文件需要重新执行npm才会生效
-// 注册全局组件示例
-// import headNav from './components/headNav'
-// Vue.component('headNav', headNav);
+
+Vue.component('headnav', _components_headnav__WEBPACK_IMPORTED_MODULE_0___default.a);
 
 /***/ }),
 

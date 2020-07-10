@@ -6,7 +6,9 @@ module.exports = {
 	serviceUrl: "",
 
 	homePage: "",
-	homePageParams: {},
+	homePageParams: {
+		statusBarType: "immersion"
+	},
 
 	appKey: "3TRWyttKzxRBtmHc004sJMjjyAxOf08l",
 

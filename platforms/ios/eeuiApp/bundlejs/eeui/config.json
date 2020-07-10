@@ -1,7 +1,10 @@
 {
 	"serviceUrl": "",
 	"homePage": "",
-	"homePageParams": {},
+	"homePageParams": {
+		"statusBarColor": "#d73a49",
+		"statusBarType": "immersion"
+	},
 	"appKey": "3TRWyttKzxRBtmHc004sJMjjyAxOf08l",
 	"android": {
 		"imageEngine": "picasso"

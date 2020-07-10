@@ -14,6 +14,9 @@ Vue.mixin({
         params: obj.query
       });
     },
+    goBack: function goBack() {
+      eeui.closePage();
+    },
     toast: function toast(val) {
       eeui.toast({
         message: val,
@@ -37,7 +40,7 @@ Vue.mixin({
       // Object.assign(compleForm, presetForm)
 
       var transUrl = url.indexOf("http") !== -1 ? url : config.api_url + url;
-      return eeui.ajax({
+      eeui.ajax({
         url: transUrl,
         method: type,
         data: compleForm
