@@ -15,9 +15,10 @@ export default {
   methods: {
   },
   async mounted () {
-    let res = await this.http.post('http://xxx.com')
-    console.log(res)
-    this.toast('mounted')
+    let res = await this.http.post('http://xxx.com:9010')
+    if (res) {
+      console.log(res)
+    }
   }
 }
 </script>

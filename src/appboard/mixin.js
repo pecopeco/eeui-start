@@ -29,26 +29,29 @@ Vue.mixin({
       //   orgName: 123456
       // }
       // Object.assign(compleForm, presetForm)
-			let transUrl = url.indexOf("http") !== -1 ? url : config.api_url + url
-			eeui.ajax({
-				url: transUrl,
-				method: type,
-				data: compleForm
-			}, (res) => {
-				if (res.code === 200) {
-          console.log(res.result)
-					setTimeout(() => {
-						requestUrl = ''
-						requestForm = {}
-					}, 300)
-					return res.result
-				} else {
-					setTimeout(() => {
-						requestUrl = ''
-						requestForm = {}
-					}, 300)
-					console.log(res)
-				}
+      let transUrl = url.indexOf("http") !== -1 ? url : config.api_url + url
+      return new Promise((resolve) => {
+        eeui.ajax({
+          url: transUrl,
+          method: type,
+          data: compleForm
+        }, (res) => {
+          if (res.code === 200) {
+            setTimeout(() => {
+              requestUrl = ''
+              requestForm = {}
+            }, 300)
+            resolve(res.result)
+          } else {
+            setTimeout(() => {
+              requestUrl = ''
+              requestForm = {}
+            }, 300)
+            this.toast('错误请求:' + res.result)
+            console.log('错误请求:' + res.result)
+            resolve(false)
+          }
+        })
       })
     },
     setHttp () {

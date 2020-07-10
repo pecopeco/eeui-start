@@ -24,6 +24,8 @@ Vue.mixin({
       });
     },
     http: function http(url) {
+      var _this = this;
+
       var form = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
       var type = arguments.length > 2 ? arguments[2] : undefined;
       var requestUrl; // 拦截重复请求
@@ -40,44 +42,49 @@ Vue.mixin({
       // Object.assign(compleForm, presetForm)
 
       var transUrl = url.indexOf("http") !== -1 ? url : config.api_url + url;
-      eeui.ajax({
-        url: transUrl,
-        method: type,
-        data: compleForm
-      }, function (res) {
-        if (res.code === 200) {
-          eeuiLog.log(res.result);
-          setTimeout(function () {
-            requestUrl = '';
-            requestForm = {};
-          }, 300);
-          return res.result;
-        } else {
-          setTimeout(function () {
-            requestUrl = '';
-            requestForm = {};
-          }, 300);
-          eeuiLog.log(res);
-        }
+      return new Promise(function (resolve) {
+        eeui.ajax({
+          url: transUrl,
+          method: type,
+          data: compleForm
+        }, function (res) {
+          if (res.code === 200) {
+            setTimeout(function () {
+              requestUrl = '';
+              requestForm = {};
+            }, 300);
+            resolve(res.result);
+          } else {
+            setTimeout(function () {
+              requestUrl = '';
+              requestForm = {};
+            }, 300);
+
+            _this.toast('错误请求:' + res.result);
+
+            eeuiLog.log('错误请求:' + res.result);
+            resolve(false);
+          }
+        });
       });
     },
     setHttp: function setHttp() {
-      var _this = this;
+      var _this2 = this;
 
       this.http.get = function (url, form) {
-        return _this.http(url, form, 'get');
+        return _this2.http(url, form, 'get');
       };
 
       this.http.post = function (url, form) {
-        return _this.http(url, form, 'post');
+        return _this2.http(url, form, 'post');
       };
 
       this.http["delete"] = function (url, form) {
-        return _this.http(url, form, 'delete');
+        return _this2.http(url, form, 'delete');
       };
 
       this.http.put = function (url, form) {
-        return _this.http(url, form, 'put');
+        return _this2.http(url, form, 'put');
       };
     },
     isObjectValueEqual: function isObjectValueEqual(objA, objB) {
