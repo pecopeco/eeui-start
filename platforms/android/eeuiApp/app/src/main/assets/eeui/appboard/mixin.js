@@ -12,17 +12,16 @@ Vue.mixin({
       var obj = {};
 
       if (_typeof(key) === 'object') {
-        obj = JSON.parse(JSON.stringify(key));
+        obj.url = 'root://pages' + key.path + '.js';
+        obj.params = key.query || {};
+        obj = Object.assign(obj, key);
       } else {
-        obj.path = key;
-        obj.query = {};
+        obj.url = 'root://pages' + key + '.js';
+        obj.params = {};
       }
 
-      eeui.openPage({
-        url: 'root://pages' + obj.path + '.js',
-        params: obj.query || {},
-        statusBarType: obj.statusBarType || 'normal'
-      });
+      eeuiLog.log(obj);
+      eeui.openPage(obj);
     },
     goBack: function goBack() {
       eeui.closePage();
