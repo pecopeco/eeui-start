@@ -16,7 +16,6 @@ Vue.mixin({
         obj.url = 'root://pages' + key + '.js'
         obj.params = {}
       }
-      console.log(obj)
 			eeui.openPage(obj)
     },
     goBack () {

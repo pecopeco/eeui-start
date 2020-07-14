@@ -20,7 +20,6 @@ Vue.mixin({
         obj.params = {};
       }
 
-      eeuiLog.log(obj);
       eeui.openPage(obj);
     },
     goBack: function goBack() {
