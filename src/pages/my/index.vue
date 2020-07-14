@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus">
+<style scoped>
 
 .my {
   flex: 1;

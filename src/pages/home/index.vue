@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus">
+<style scoped>
 
 .home {
   flex: 1;

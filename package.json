@@ -43,8 +43,5 @@
 		"weex-ui": "^0.8.4",
 		"minimist": "^1.2.5"
 	},
-	"dependencies": {
-		"stylus": "^0.54.7",
-		"stylus-loader": "^3.0.2"
-	}
+	"dependencies": {}
 }
