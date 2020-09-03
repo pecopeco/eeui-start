@@ -61,6 +61,7 @@ Vue.mixin({
               requestUrl = '';
               requestForm = {};
             }, 300);
+            eeuiLog.log('请求成功：' + res.result);
             resolve(res.result);
           } else {
             setTimeout(function () {
@@ -68,9 +69,9 @@ Vue.mixin({
               requestForm = {};
             }, 300);
 
-            _this.toast('错误请求:' + res.result);
+            _this.toast('错误请求：' + res.result);
 
-            eeuiLog.log('错误请求:' + res.result);
+            eeuiLog.log('错误请求：' + res.result);
             resolve(false);
           }
         });
@@ -120,6 +121,46 @@ Vue.mixin({
       }
 
       return true;
+    },
+    // 表单验证
+    validate: function validate(arr) {
+      var err = {};
+      arr.some(function (item) {
+        // 数字转换字符串
+        if (typeof item.key === 'number') {
+          item.key = item.key.toString();
+        } // 验证非空
+
+
+        if (!item.key || item.key.match(/^[ ]+$/)) {
+          err[item.type] = true;
+          return err.msg = '请填写' + item.name;
+        } // 验证姓名
+
+
+        if (item.type === 'name' && (!/^[\u4e00-\u9fa5]+$/.test(item.key) || item.key.length < 2)) {
+          err[item.type] = true;
+          return err.msg = '请输入正确的' + item.name;
+        } // 验证手机号
+
+
+        if (item.type === 'phone' && !(item.key.length === 11 && /^((13|14|15|17|18|19)[0-9]{1}\d{8})$/.test(item.key))) {
+          err[item.type] = true;
+          return err.msg = '请输入正确的' + item.name;
+        } // 验证身份证号
+
+
+        if (item.type === 'idCard' && !/^\d{6}(19|20)?\d{2}(0[1-9]|1[012])(0[1-9]|[12]\d|3[01])\d{3}(\d|X)$/i.test(item.key)) {
+          err[item.type] = true;
+          return err.msg = '请输入正确的' + item.name;
+        } // 验证金额
+
+
+        if (item.type === 'price' && (!Number.isFinite(Number(item.key)) || Number(item.key) <= 0 || item.key.split('.')[1] && item.key.split('.')[1].length > 2)) {
+          err = '请输入正确的' + item.name;
+        }
+      });
+      return Object.keys(err).length ? err : '';
     }
   },
   mounted: function mounted() {
