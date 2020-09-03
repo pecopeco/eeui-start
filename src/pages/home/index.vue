@@ -15,7 +15,6 @@ export default {
   methods: {
   },
   async mounted () {
-    eeui.shareText('text')
     let res = await this.http.post('http://xxx.com:9010')
     if (res) {
       console.log(res)

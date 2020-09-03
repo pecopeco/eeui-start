@@ -6,8 +6,8 @@ Vue.mixin({
 		}
 	},
 	methods: {
-		go (key) {
-      let obj = {}
+		go (key, barColor = '#2c3e50', barStyle = true ) {
+      let obj = {statusBarColor: barColor, barStyle: true}
       if (typeof key === 'object') {
         obj.url = 'root://pages' + key.path + '.js'
         obj.params = key.query || {}

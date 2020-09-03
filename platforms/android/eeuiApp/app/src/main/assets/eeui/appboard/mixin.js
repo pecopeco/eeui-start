@@ -9,7 +9,12 @@ Vue.mixin({
   },
   methods: {
     go: function go(key) {
-      var obj = {};
+      var barColor = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '#2c3e50';
+      var barStyle = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      var obj = {
+        statusBarColor: barColor,
+        barStyle: true
+      };
 
       if (_typeof(key) === 'object') {
         obj.url = 'root://pages' + key.path + '.js';
