@@ -1,14 +1,15 @@
 {
-	"name": "eeui-start",
-	"version": "2.3.6",
+	"name": "eeui-template",
+	"version": "2.3.11",
 	"description": "A eeui project",
-	"eeuiclimin": "2.3.6",
+	"eeuiclimin": "2.3.11",
 	"author": "kuaifan",
 	"scripts": {
 		"start": "eeui dev",
 		"dev-once": "eeui dev --simple",
 		"build": "eeui build",
-		"build-nozip": "eeui build --simple"
+		"build-nozip": "eeui build --simple",
+		"dev": "eeui dev"
 	},
 	"keywords": [
 		"weex",
