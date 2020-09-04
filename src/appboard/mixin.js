@@ -4,7 +4,35 @@ Vue.mixin({
 	data () {
 		return {
 		}
-	},
+  },
+  computed: {
+    isIOS () {
+      const { platform } = weex.config.env
+      return platform.toLowerCase() === 'ios'
+    },
+    isAndroid () {
+      const { platform } = weex.config.env
+      return platform.toLowerCase() === 'android'
+    },
+    isIPhoneX () {
+      const { deviceHeight } = weex.config.env
+      return (
+        this.isIOS &&
+        (deviceHeight === 2436 || deviceHeight === 2688 || deviceHeight === 1792 || deviceHeight === 1624)
+      )
+    },
+    // 页面高度(屏幕高度减去导航栏)
+    getPageHeight () {
+      const { env } = weex.config;
+      const navHeight = this.isIPhoneX ? 176 : 132;
+      return (env.deviceHeight / env.deviceWidth) * 750 - navHeight;
+    },
+    // 屏幕高度
+    getScreenHeight () {
+      const { env } = weex.config;
+      return (env.deviceHeight / env.deviceWidth) * 750;
+    }
+  },
 	methods: {
 		go (key, barColor = '#2c3e50', barStyle = true ) {
       let obj = {statusBarColor: barColor, barStyle: true}

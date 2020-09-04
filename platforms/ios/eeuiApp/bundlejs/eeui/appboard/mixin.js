@@ -7,6 +7,31 @@ Vue.mixin({
   data: function data() {
     return {};
   },
+  computed: {
+    isIOS: function isIOS() {
+      var platform = weex.config.env.platform;
+      return platform.toLowerCase() === 'ios';
+    },
+    isAndroid: function isAndroid() {
+      var platform = weex.config.env.platform;
+      return platform.toLowerCase() === 'android';
+    },
+    isIPhoneX: function isIPhoneX() {
+      var deviceHeight = weex.config.env.deviceHeight;
+      return this.isIOS && (deviceHeight === 2436 || deviceHeight === 2688 || deviceHeight === 1792 || deviceHeight === 1624);
+    },
+    // 页面高度(屏幕高度减去导航栏)
+    getPageHeight: function getPageHeight() {
+      var env = weex.config.env;
+      var navHeight = this.isIPhoneX ? 176 : 132;
+      return env.deviceHeight / env.deviceWidth * 750 - navHeight;
+    },
+    // 屏幕高度
+    getScreenHeight: function getScreenHeight() {
+      var env = weex.config.env;
+      return env.deviceHeight / env.deviceWidth * 750;
+    }
+  },
   methods: {
     go: function go(key) {
       var barColor = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '#2c3e50';
