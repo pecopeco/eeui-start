@@ -3,12 +3,18 @@
     navbar.navbar
       navbar-item(type="back")
       navbar-item(type="title")
-        text.title 标题
+        text.title {{title}}
 </template>
 
 <script>
 
 export default {
+  props: {
+    title: {
+      type: String,
+      default: ''
+    }
+  },
   data () {
     return {
     }

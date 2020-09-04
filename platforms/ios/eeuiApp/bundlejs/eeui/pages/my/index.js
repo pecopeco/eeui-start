@@ -119,6 +119,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    title: {
+      type: String,
+      "default": ''
+    }
+  },
   data: function data() {
     return {};
   },
@@ -286,7 +292,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('text', {
     staticClass: ["title"]
-  }, [_vm._v("标题")])])], 1)], 1)
+  }, [_vm._v(_vm._s(_vm.title))])])], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

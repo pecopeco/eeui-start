@@ -1,6 +1,6 @@
 <template lang="pug">
   .detail
-    headnav
+    headnav(title="detail")
     .text detail
     .query get:{{type}}
     button.btn(model="blue" text="go back" @click="goBack()")

@@ -119,6 +119,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    title: {
+      type: String,
+      "default": ''
+    }
+  },
   data: function data() {
     return {};
   },
@@ -224,7 +230,11 @@ module.exports = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["detail"]
-  }, [_c('headnav'), _c('div', {
+  }, [_c('headnav', {
+    attrs: {
+      "title": "detail"
+    }
+  }), _c('div', {
     staticClass: ["text"]
   }, [_vm._v("detail")]), _c('div', {
     staticClass: ["query"]
@@ -267,7 +277,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('text', {
     staticClass: ["title"]
-  }, [_vm._v("标题")])])], 1)], 1)
+  }, [_vm._v(_vm._s(_vm.title))])])], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
