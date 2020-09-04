@@ -204,10 +204,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }))();
   },
   pageResume: function pageResume() {
-    eeuiLog.log('show');
+    eeuiLog.log('home show');
   },
   pagePause: function pagePause() {
-    eeuiLog.log('hide');
+    eeuiLog.log('home hide');
   }
 });
 

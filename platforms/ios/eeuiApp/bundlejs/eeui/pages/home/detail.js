@@ -174,7 +174,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {},
   mounted: function mounted() {
-    eeuiLog.log(app.config.params.type);
+    eeuiLog.log('get query: ', app.config.params.type);
+  },
+  pagePause: function pagePause() {
+    eeuiLog.log('detail hide');
   }
 });
 

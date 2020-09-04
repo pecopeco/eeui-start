@@ -20,7 +20,10 @@ export default {
   methods: {
   },
   mounted () {
-    console.log(app.config.params.type)
+    console.log('get query: ', app.config.params.type)
+  },
+  pagePause () {
+    console.log('detail hide')
   }
 }
 </script>

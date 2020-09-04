@@ -21,10 +21,10 @@ export default {
     }
   },
   pageResume () {
-    console.log('show')
+    console.log('home show')
   },
   pagePause () {
-    console.log('hide')
+    console.log('home hide')
   }
 }
 </script>
