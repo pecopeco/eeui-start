@@ -19,6 +19,12 @@ export default {
     if (res) {
       console.log(res)
     }
+  },
+  pageResume () {
+    console.log('show')
+  },
+  pagePause () {
+    console.log('hide')
   }
 }
 </script>

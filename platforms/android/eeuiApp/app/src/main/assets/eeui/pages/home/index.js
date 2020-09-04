@@ -202,6 +202,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }
       }, _callee);
     }))();
+  },
+  pageResume: function pageResume() {
+    eeuiLog.log('show');
+  },
+  pagePause: function pagePause() {
+    eeuiLog.log('hide');
   }
 });
 
