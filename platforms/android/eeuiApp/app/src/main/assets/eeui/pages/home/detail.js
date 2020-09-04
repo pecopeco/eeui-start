@@ -163,6 +163,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
@@ -186,6 +187,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports) {
 
 module.exports = {
+  "detail": {
+    "flex": 1
+  },
+  "content": {
+    "flex": 1,
+    "display": "flex",
+    "alignItems": "center",
+    "justifyContent": "center"
+  },
   "btn": {
     "width": "200",
     "height": "80",
@@ -235,6 +245,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "title": "detail"
     }
   }), _c('div', {
+    staticClass: ["content"]
+  }, [_c('div', {
     staticClass: ["text"]
   }, [_vm._v("detail")]), _c('div', {
     staticClass: ["query"]
@@ -249,7 +261,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.goBack()
       }
     }
-  })], 1)
+  })], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

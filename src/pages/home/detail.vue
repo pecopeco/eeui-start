@@ -1,9 +1,10 @@
 <template lang="pug">
   .detail
     headnav(title="detail")
-    .text detail
-    .query get:{{type}}
-    button.btn(model="blue" text="go back" @click="goBack()")
+    .content
+      .text detail
+      .query get:{{type}}
+      button.btn(model="blue" text="go back" @click="goBack()")
 </template>
 
 <script>
@@ -27,6 +28,13 @@ export default {
 <style scoped>
 
 .detail {
+  flex: 1;
+}
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn {
   width: 200px;
