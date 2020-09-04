@@ -38,7 +38,8 @@ Vue.mixin({
       var barStyle = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
       var obj = {
         statusBarColor: barColor,
-        barStyle: true
+        barStyle: true,
+        animatedType: 'push'
       };
 
       if (_typeof(key) === 'object') {
