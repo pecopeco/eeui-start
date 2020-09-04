@@ -1,7 +1,8 @@
 <template lang="pug">
   .topbar
     navbar.navbar
-      navbar-item(type="back")
+      navbar-item(type="left" @click="goBack()")
+        icon.icon(content="ios-arrow-back" fontSize="46")
       navbar-item(type="title")
         text.title {{title}}
 </template>
@@ -35,10 +36,17 @@ export default {
 .navbar {
   width: 750px;
   height: 100px;
-  background-color: #d73a49;
+  background-color: #f6f7f9;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #f1f0f0;
+}
+.icon {
+  width: 100px;
+  height: 100px;
 }
 .title {
-  color: #fff;
-  font-size: 26px;
+  color: #000;
+  font-size: 30px;
 }
 </style>

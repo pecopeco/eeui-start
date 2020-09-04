@@ -118,6 +118,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     title: {
@@ -220,11 +221,18 @@ module.exports = {
   "navbar": {
     "width": "750",
     "height": "100",
-    "backgroundColor": "#d73a49"
+    "backgroundColor": "#f6f7f9",
+    "borderBottomStyle": "solid",
+    "borderWidth": "1",
+    "borderColor": "#f1f0f0"
+  },
+  "icon": {
+    "width": "100",
+    "height": "100"
   },
   "title": {
-    "color": "#ffffff",
-    "fontSize": "26"
+    "color": "#000000",
+    "fontSize": "30"
   }
 }
 
@@ -281,9 +289,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["navbar"]
   }, [_c('navbar-item', {
     attrs: {
-      "type": "back"
+      "type": "left"
+    },
+    on: {
+      "click": function($event) {
+        _vm.goBack()
+      }
     }
-  }), _c('navbar-item', {
+  }, [_c('icon', {
+    staticClass: ["icon"],
+    attrs: {
+      "content": "ios-arrow-back",
+      "fontSize": "46"
+    }
+  })], 1), _c('navbar-item', {
     attrs: {
       "type": "title"
     }
