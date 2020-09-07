@@ -24,7 +24,11 @@ export default {
   },
   methods: {
   },
-  mounted () {
+  pageResume () {
+    console.log('index show')
+  },
+  pagePause () {
+    console.log('index hide')
   }
 }
 </script>

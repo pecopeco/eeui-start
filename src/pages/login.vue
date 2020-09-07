@@ -19,7 +19,11 @@ export default {
       this.go({path: '/index', statusBarType: 'immersion'})
     }
   },
-  mounted () {
+  pageResume () {
+    console.log('login show')
+  },
+  pagePause () {
+    console.log('login hide')
   }
 }
 </script>

@@ -14,14 +14,11 @@ export default {
   },
   methods: {
   },
-  async mounted () {
+  async pageResume () {
     let res = await this.http.post('http://xxx.com:9010')
     if (res) {
       console.log(res)
     }
-  },
-  pageResume () {
-    console.log('home show')
   },
   pagePause () {
     console.log('home hide')

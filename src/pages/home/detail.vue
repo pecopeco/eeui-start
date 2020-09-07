@@ -19,7 +19,7 @@ export default {
   },
   methods: {
   },
-  mounted () {
+  pageResume () {
     console.log('get query: ', app.config.params.type)
   },
   pagePause () {

@@ -176,7 +176,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return {};
   },
   methods: {},
-  mounted: function mounted() {
+  pageResume: function pageResume() {
     var _this = this;
 
     return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
@@ -202,9 +202,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }
       }, _callee);
     }))();
-  },
-  pageResume: function pageResume() {
-    eeuiLog.log('home show');
   },
   pagePause: function pagePause() {
     eeuiLog.log('home hide');

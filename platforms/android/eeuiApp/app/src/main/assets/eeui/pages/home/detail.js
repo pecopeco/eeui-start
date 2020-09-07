@@ -173,7 +173,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {},
-  mounted: function mounted() {
+  pageResume: function pageResume() {
     eeuiLog.log('get query: ', app.config.params.type);
   },
   pagePause: function pagePause() {

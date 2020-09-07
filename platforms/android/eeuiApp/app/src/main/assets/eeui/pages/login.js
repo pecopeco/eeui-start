@@ -176,7 +176,12 @@ __webpack_require__.r(__webpack_exports__);
       });
     }
   },
-  mounted: function mounted() {}
+  pageResume: function pageResume() {
+    eeuiLog.log('login show');
+  },
+  pagePause: function pagePause() {
+    eeuiLog.log('login hide');
+  }
 });
 
 /***/ }),
