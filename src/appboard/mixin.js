@@ -1,4 +1,5 @@
 const eeui = app.requireModule('eeui')
+let modal = app.requireModule('modal')
 
 Vue.mixin({
 	data () {
@@ -50,7 +51,7 @@ Vue.mixin({
       eeui.closePage()
     },
 		toast (val) {
-			eeui.toast({message: val, gravity: 'middle'})
+			modal.toast({message: val, duration: 0.3})
 		},
 		http (url, form = {}, type) {
       let requestUrl

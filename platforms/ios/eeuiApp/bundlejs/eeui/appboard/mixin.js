@@ -3,6 +3,7 @@
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 var eeui = app.requireModule('eeui');
+var modal = app.requireModule('modal');
 Vue.mixin({
   data: function data() {
     return {};
@@ -57,9 +58,9 @@ Vue.mixin({
       eeui.closePage();
     },
     toast: function toast(val) {
-      eeui.toast({
+      modal.toast({
         message: val,
-        gravity: 'middle'
+        duration: 0.3
       });
     },
     http: function http(url) {

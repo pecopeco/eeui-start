@@ -168,6 +168,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     login: function login() {
+      this.toast('登录成功!');
       eeui.setCaches('token', '123');
       eeui.setCustomConfig('homePage', 'index.js');
       this.go({
