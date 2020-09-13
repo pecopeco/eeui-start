@@ -32,10 +32,6 @@ export default {
 <style scoped>
 
 .login {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .btn {
   width: 200px;

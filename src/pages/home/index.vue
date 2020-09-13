@@ -29,10 +29,6 @@ export default {
 <style scoped>
 
 .home {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .logo {
   width: 100px;

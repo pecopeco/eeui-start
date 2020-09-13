@@ -31,7 +31,6 @@ export default {
 <style scoped>
 
 .detail {
-  flex: 1;
 }
 .content {
   flex: 1;
