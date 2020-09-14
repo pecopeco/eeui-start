@@ -233,6 +233,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 /***/ (function(module, exports) {
 
 module.exports = {
+  "home": {
+    "backgroundColor": "#f6f6f6"
+  },
   "logo": {
     "width": "100",
     "height": "100",

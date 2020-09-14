@@ -189,7 +189,8 @@ __webpack_require__.r(__webpack_exports__);
       this.go({
         path: '/login',
         statusBarType: 'immersion',
-        backPressedClose: false
+        backPressedClose: false,
+        swipeBack: false
       });
     }
   },
@@ -209,6 +210,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports) {
 
 module.exports = {
+  "my": {
+    "backgroundColor": "#f6f6f6"
+  },
   "logo": {
     "width": "100",
     "height": "100",

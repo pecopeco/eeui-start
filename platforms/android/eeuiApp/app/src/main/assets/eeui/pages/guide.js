@@ -192,9 +192,9 @@ __webpack_require__.r(__webpack_exports__);
     //     if (this.time === 0) {
     //       clearInterval(this.timer)
     //       if (eeui.getCaches('token')) {
-    //         this.go({path: '/index', statusBarType: 'immersion', backPressedClose: false})
+    //         this.go({path: '/index', statusBarType: 'immersion', backPressedClose: false, swipeBack: false})
     //       } else {
-    //         this.go({path: '/login', statusBarType: 'immersion', backPressedClose: false})
+    //         this.go({path: '/login', statusBarType: 'immersion', backPressedClose: false, swipeBack: false})
     //       }
     //     } else {
     //       this.time = this.time - 1
@@ -208,13 +208,15 @@ __webpack_require__.r(__webpack_exports__);
         this.go({
           path: '/index',
           statusBarType: 'immersion',
-          backPressedClose: false
+          backPressedClose: false,
+          swipeBack: false
         });
       } else {
         this.go({
           path: '/login',
           statusBarType: 'immersion',
-          backPressedClose: false
+          backPressedClose: false,
+          swipeBack: false
         });
       }
     }

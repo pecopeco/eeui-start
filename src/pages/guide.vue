@@ -25,9 +25,9 @@ export default {
     //     if (this.time === 0) {
     //       clearInterval(this.timer)
     //       if (eeui.getCaches('token')) {
-    //         this.go({path: '/index', statusBarType: 'immersion', backPressedClose: false})
+    //         this.go({path: '/index', statusBarType: 'immersion', backPressedClose: false, swipeBack: false})
     //       } else {
-    //         this.go({path: '/login', statusBarType: 'immersion', backPressedClose: false})
+    //         this.go({path: '/login', statusBarType: 'immersion', backPressedClose: false, swipeBack: false})
     //       }
     //     } else {
     //       this.time = this.time - 1
@@ -37,9 +37,9 @@ export default {
     checkImg () {
       clearInterval(this.timer)
       if (eeui.getCaches('token')) {
-        this.go({path: '/index', statusBarType: 'immersion', backPressedClose: false})
+        this.go({path: '/index', statusBarType: 'immersion', backPressedClose: false, swipeBack: false})
       } else {
-        this.go({path: '/login', statusBarType: 'immersion', backPressedClose: false})
+        this.go({path: '/login', statusBarType: 'immersion', backPressedClose: false, swipeBack: false})
       }
     }
   },
@@ -47,6 +47,7 @@ export default {
     // this.getData()
   },
   pagePause () {
+    clearInterval(this.timer)
   }
 }
 </script>

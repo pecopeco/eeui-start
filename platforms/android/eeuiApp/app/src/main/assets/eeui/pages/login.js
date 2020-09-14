@@ -185,7 +185,8 @@ __webpack_require__.r(__webpack_exports__);
       this.go({
         path: '/index',
         statusBarType: 'immersion',
-        backPressedClose: false
+        backPressedClose: false,
+        swipeBack: false
       });
     }
   },

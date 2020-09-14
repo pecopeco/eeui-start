@@ -18,7 +18,7 @@ export default {
     logout () {
       eeui.clearAllCaches()
       eeui.setCustomConfig('homePage', 'login.js')
-      this.go({path: '/login', statusBarType: 'immersion', backPressedClose: false})
+      this.go({path: '/login', statusBarType: 'immersion', backPressedClose: false, swipeBack: false})
     }
   },
   pageResume () {
@@ -32,6 +32,7 @@ export default {
 <style scoped>
 
 .my {
+  background-color: #f6f6f6;
 }
 .logo {
   width: 100px;

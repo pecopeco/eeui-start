@@ -16,7 +16,7 @@ export default {
     login () {
       this.toast('登录成功!')
       eeui.setCaches('token', '123')
-      this.go({path: '/index', statusBarType: 'immersion', backPressedClose: false})
+      this.go({path: '/index', statusBarType: 'immersion', backPressedClose: false, swipeBack: false})
     }
   },
   pageResume () {

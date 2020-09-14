@@ -201,6 +201,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports) {
 
 module.exports = {
+  "detail": {
+    "backgroundColor": "#f6f6f6"
+  },
   "content": {
     "flex": 1,
     "display": "flex",

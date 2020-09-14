@@ -32,6 +32,7 @@ export default {
 <style scoped>
 
 .home {
+  background-color: #f6f6f6;
 }
 .logo {
   width: 100px;
