@@ -17,7 +17,7 @@ export default {
   data () {
     return {
       tabPages: [
-        {statusBarColor: "#2c3e50", url: "root://pages/home/index.js", title: "首页", selectedIcon: "tb-home-fill"},
+        {statusBarColor: "#f6f6f6", url: "root://pages/home/index.js", title: "首页", selectedIcon: "tb-home-fill"},
         {statusBarColor: "#d73a49", url: "root://pages/my/index.js", title: "我的", message: "3", selectedIcon: "tb-my-fill"}
       ]
     }
@@ -25,10 +25,8 @@ export default {
   methods: {
   },
   pageResume () {
-    console.log('index show')
   },
   pagePause () {
-    console.log('index hide')
   }
 }
 </script>

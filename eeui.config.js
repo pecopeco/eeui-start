@@ -5,7 +5,7 @@
 module.exports = {
 	serviceUrl: "",
 
-	homePage: "login.js",
+	homePage: "guide.js",
 	homePageParams: {
 		statusBarType: "immersion"
 	},

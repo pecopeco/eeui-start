@@ -30,22 +30,23 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         fullScreen();
         setContentView(R.layout.activity_splash);
-        new Handler().postDelayed(() -> openNext(""), eeuiBase.cloud.welcome(this, new eeuiBase.OnWelcomeListener() {
-            @Override
-            public void skip() {
-                openNext("");
-            }
+        openNext("");
+        // new Handler().postDelayed(() -> openNext(""), eeuiBase.cloud.welcome(this, new eeuiBase.OnWelcomeListener() {
+        //     @Override
+        //     public void skip() {
+        //         openNext("");
+        //     }
 
-            @Override
-            public void finish() {
-                openNext("");
-            }
+        //     @Override
+        //     public void finish() {
+        //         openNext("");
+        //     }
 
-            @Override
-            public void click(String var) {
-                openNext(var);
-            }
-        }));
+        //     @Override
+        //     public void click(String var) {
+        //         openNext(var);
+        //     }
+        // }));
     }
 
     @Override

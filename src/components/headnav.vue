@@ -1,10 +1,10 @@
 <template lang="pug">
   .topbar
-    navbar.navbar
+    navbar.navbar(:style="{backgroundColor: bgColor, borderColor: borderColor}")
       navbar-item(type="left" @click="goBack()")
-        icon.icon(content="ios-arrow-back" fontSize="46")
+        icon.icon(content="ios-arrow-back" fontSize="46" :style="{color: color}")
       navbar-item(type="title")
-        text.title {{title}}
+        text.title(:style="{color: color}") {{title}}
 </template>
 
 <script>
@@ -14,6 +14,18 @@ export default {
     title: {
       type: String,
       default: ''
+    },
+    bgColor: {
+      type: String,
+      default: '#efefef'
+    },
+    borderColor: {
+      type: String,
+      default: '#efefef'
+    },
+    color: {
+      type: String,
+      default: '#000000'
     }
   },
   data () {
@@ -36,17 +48,14 @@ export default {
 .navbar {
   width: 750px;
   height: 100px;
-  background-color: #f6f7f9;
   border-bottom-style: solid;
   border-width: 1px;
-  border-color: #f1f0f0;
 }
 .icon {
   width: 100px;
   height: 100px;
 }
 .title {
-  color: #000;
-  font-size: 30px;
+  font-size: 35px;
 }
 </style>

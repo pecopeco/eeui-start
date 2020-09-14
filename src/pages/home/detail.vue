@@ -23,7 +23,6 @@ export default {
     console.log('get query: ', app.config.params.type)
   },
   pagePause () {
-    console.log('detail hide')
   }
 }
 </script>

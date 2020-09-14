@@ -1,6 +1,8 @@
 const eeui = app.requireModule('eeui')
 let modal = app.requireModule('modal')
 
+let configUrl = 'https://lnrapp.xianglu-china.com'
+
 Vue.mixin({
 	data () {
 		return {
@@ -35,7 +37,7 @@ Vue.mixin({
     }
   },
 	methods: {
-		go (key, barColor = '#2c3e50', barStyle = true ) {
+		go (key, barColor = '#efefef', barStyle = false) {
       let obj = {statusBarColor: barColor, statusBarStyle: barStyle, animatedType: 'push'}
       if (typeof key === 'object') {
         obj.url = 'root://pages' + key.path + '.js'
@@ -67,7 +69,7 @@ Vue.mixin({
       //   orgName: 123456
       // }
       // Object.assign(compleForm, presetForm)
-      let transUrl = url.indexOf("http") !== -1 ? url : config.api_url + url
+      let transUrl = url.indexOf("http") !== -1 ? url : configUrl + url
       return new Promise((resolve) => {
         eeui.ajax({
           url: transUrl,

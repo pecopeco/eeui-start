@@ -84,7 +84,7 @@ if(typeof eeuiLog=="undefined"){var eeuiLog={_:function(t,e){var s=e.map(functio
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/login.vue?entry=true");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/guide.vue?entry=true");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -147,9 +147,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib/index.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/login.vue":
+/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib/index.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/guide.vue":
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/login.vue ***!
+  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/guide.vue ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -176,37 +176,79 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
-    return {};
+    return {
+      data: '',
+      timer: '',
+      time: 5
+    };
   },
   methods: {
-    login: function login() {
-      this.toast('登录成功!');
-      eeui.setCaches('token', '123');
-      this.go({
-        path: '/index',
-        statusBarType: 'immersion',
-        backPressedClose: false
-      });
+    // async getData () {
+    //   let res = await this.http.post('/getGuideList')
+    //   if (res && res.data && res.data.length) {
+    //     this.data = res.data[0]
+    //   }
+    //   this.timer = setInterval(() => {
+    //     if (this.time === 0) {
+    //       clearInterval(this.timer)
+    //       if (eeui.getCaches('token')) {
+    //         this.go({path: '/index', statusBarType: 'immersion', backPressedClose: false})
+    //       } else {
+    //         this.go({path: '/login', statusBarType: 'immersion', backPressedClose: false})
+    //       }
+    //     } else {
+    //       this.time = this.time - 1
+    //     }
+    //   }, 1000)
+    // },
+    checkImg: function checkImg() {
+      clearInterval(this.timer);
+
+      if (eeui.getCaches('token')) {
+        this.go({
+          path: '/index',
+          statusBarType: 'immersion',
+          backPressedClose: false
+        });
+      } else {
+        this.go({
+          path: '/login',
+          statusBarType: 'immersion',
+          backPressedClose: false
+        });
+      }
     }
   },
-  pageResume: function pageResume() {},
+  pageResume: function pageResume() {// this.getData()
+  },
   pagePause: function pagePause() {}
 });
 
 /***/ }),
 
-/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-358c3dbb!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/pages/login.vue":
+/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-204287ce!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/pages/guide.vue":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-358c3dbb!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/pages/login.vue ***!
+  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-204287ce!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/pages/guide.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = {
-  "btn": {
-    "width": "200",
-    "height": "80",
-    "marginTop": "50"
+  "img": {
+    "flex": 1
+  },
+  "time": {
+    "position": "absolute",
+    "top": "60",
+    "right": "50",
+    "width": "100",
+    "height": "100",
+    "lineHeight": "100",
+    "borderRadius": 50,
+    "fontSize": "50",
+    "textAlign": "center",
+    "backgroundColor": "#969595",
+    "color": "#ffffff"
   }
 }
 
@@ -241,28 +283,28 @@ module.exports = {
 
 /***/ }),
 
-/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-358c3dbb!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/pages/login.vue":
+/***/ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-204287ce!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/pages/guide.vue":
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-358c3dbb!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/pages/login.vue ***!
+  !*** C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-204287ce!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!C:/Users/1/AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/pages/guide.vue ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["login"]
-  }, [_c('button', {
-    staticClass: ["btn"],
+    staticClass: ["guide"]
+  }, [_c('image', {
+    staticClass: ["img"],
     attrs: {
-      "model": "green",
-      "text": "登录"
+      "resize": "cover",
+      "src": "root://assets/logo-white.png"
     },
     on: {
-      "click": function($event) {
-        _vm.login()
-      }
+      "click": _vm.checkImg
     }
-  })], 1)
+  }), _c('text', {
+    staticClass: ["time"]
+  }, [_vm._v(_vm._s(_vm.time))])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
@@ -383,9 +425,9 @@ Vue.component('headnav', _components_headnav__WEBPACK_IMPORTED_MODULE_0___defaul
 
 /***/ }),
 
-/***/ "./src/pages/login.vue?entry=true":
+/***/ "./src/pages/guide.vue?entry=true":
 /*!****************************************!*\
-  !*** ./src/pages/login.vue?entry=true ***!
+  !*** ./src/pages/guide.vue?entry=true ***!
   \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -394,14 +436,14 @@ var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter?id=data-v-358c3dbb!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=styles&index=0!./login.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-358c3dbb!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/pages/login.vue")
+__vue_styles__.push(__webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter?id=data-v-204287ce!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=styles&index=0!./guide.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/style-rewriter.js?id=data-v-204287ce!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=styles&index=0!./src/pages/guide.vue")
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader!babel-loader!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=script&index=0!./login.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib/index.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/login.vue")
+__vue_exports__ = __webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader!babel-loader!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=script&index=0!./guide.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/script-loader.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/node_modules/babel-loader/lib/index.js!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=script&index=0!./src/pages/guide.vue")
 
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler?id=data-v-358c3dbb!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader?raw&engine=pug!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=template&index=0!./login.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-358c3dbb!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/pages/login.vue")
+var __vue_template__ = __webpack_require__(/*! !../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler?id=data-v-204287ce!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader?raw&engine=pug!../../../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector?type=template&index=0!./guide.vue */ "../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-compiler.js?id=data-v-204287ce!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/template-loader.js?raw&engine=pug!../../../AppData/Roaming/npm/node_modules/eeui-cli/lib/loaders/eeui-loader/lib/selector.js?type=template&index=0!./src/pages/guide.vue")
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -413,10 +455,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "C:\\Users\\1\\Desktop\\project\\eeui-start\\src\\pages\\login.vue"
+__vue_options__.__file = "C:\\Users\\1\\Desktop\\project\\eeui-start\\src\\pages\\guide.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-358c3dbb"
+__vue_options__._scopeId = "data-v-204287ce"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {

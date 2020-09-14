@@ -16,15 +16,12 @@ export default {
     login () {
       this.toast('登录成功!')
       eeui.setCaches('token', '123')
-      eeui.setCustomConfig('homePage', 'index.js')
-      this.go({path: '/index', statusBarType: 'immersion'})
+      this.go({path: '/index', statusBarType: 'immersion', backPressedClose: false})
     }
   },
   pageResume () {
-    console.log('login show')
   },
   pagePause () {
-    console.log('login hide')
   }
 }
 </script>

@@ -18,10 +18,13 @@ export default {
     logout () {
       eeui.clearAllCaches()
       eeui.setCustomConfig('homePage', 'login.js')
-      this.go('/login')
+      this.go({path: '/login', statusBarType: 'immersion', backPressedClose: false})
     }
   },
-  mounted () {
+  pageResume () {
+    eeui.setStatusBarStyle(true)
+  },
+  pagePause () {
   }
 }
 </script>

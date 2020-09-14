@@ -124,6 +124,18 @@ __webpack_require__.r(__webpack_exports__);
     title: {
       type: String,
       "default": ''
+    },
+    bgColor: {
+      type: String,
+      "default": '#efefef'
+    },
+    borderColor: {
+      type: String,
+      "default": '#efefef'
+    },
+    color: {
+      type: String,
+      "default": '#000000'
     }
   },
   data: function data() {
@@ -175,37 +187,40 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   data: function data() {
     return {};
   },
-  methods: {},
-  pageResume: function pageResume() {
-    var _this = this;
+  methods: {
+    getData: function getData() {
+      var _this = this;
 
-    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
-      var res;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.next = 2;
-              return _this.http.post('http://xxx.com:9010');
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
+        var res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return _this.http.post('http://xxx.com:9010');
 
-            case 2:
-              res = _context.sent;
+              case 2:
+                res = _context.sent;
 
-              if (res) {
-                eeuiLog.log(res);
-              }
+                if (res) {
+                  eeuiLog.log(res);
+                }
 
-            case 4:
-            case "end":
-              return _context.stop();
+              case 4:
+              case "end":
+                return _context.stop();
+            }
           }
-        }
-      }, _callee);
-    }))();
+        }, _callee);
+      }))();
+    }
   },
-  pagePause: function pagePause() {
-    eeuiLog.log('home hide');
-  }
+  pageResume: function pageResume() {
+    this.getData();
+    eeui.setStatusBarStyle(false);
+  },
+  pagePause: function pagePause() {}
 });
 
 /***/ }),
@@ -218,12 +233,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 /***/ (function(module, exports) {
 
 module.exports = {
-  "home": {
-    "flex": 1,
-    "display": "flex",
-    "alignItems": "center",
-    "justifyContent": "center"
-  },
   "logo": {
     "width": "100",
     "height": "100",
@@ -253,18 +262,15 @@ module.exports = {
   "navbar": {
     "width": "750",
     "height": "100",
-    "backgroundColor": "#f6f7f9",
     "borderBottomStyle": "solid",
-    "borderWidth": "1",
-    "borderColor": "#f1f0f0"
+    "borderWidth": "1"
   },
   "icon": {
     "width": "100",
     "height": "100"
   },
   "title": {
-    "color": "#000000",
-    "fontSize": "30"
+    "fontSize": "35"
   }
 }
 
@@ -320,7 +326,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["topbar"]
   }, [_c('navbar', {
-    staticClass: ["navbar"]
+    staticClass: ["navbar"],
+    style: {
+      backgroundColor: _vm.bgColor,
+      borderColor: _vm.borderColor
+    }
   }, [_c('navbar-item', {
     attrs: {
       "type": "left"
@@ -332,6 +342,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('icon', {
     staticClass: ["icon"],
+    style: {
+      color: _vm.color
+    },
     attrs: {
       "content": "ios-arrow-back",
       "fontSize": "46"
@@ -341,7 +354,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "title"
     }
   }, [_c('text', {
-    staticClass: ["title"]
+    staticClass: ["title"],
+    style: {
+      color: _vm.color
+    }
   }, [_vm._v(_vm._s(_vm.title))])])], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true

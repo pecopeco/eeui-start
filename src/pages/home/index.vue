@@ -13,15 +13,18 @@ export default {
     }
   },
   methods: {
-  },
-  async pageResume () {
-    let res = await this.http.post('http://xxx.com:9010')
-    if (res) {
-      console.log(res)
+    async getData () {
+      let res = await this.http.post('http://xxx.com:9010')
+      if (res) {
+        console.log(res)
+      }
     }
   },
+  pageResume () {
+    this.getData()
+    eeui.setStatusBarStyle(false)
+  },
   pagePause () {
-    console.log('home hide')
   }
 }
 </script>

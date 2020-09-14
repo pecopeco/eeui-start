@@ -124,6 +124,18 @@ __webpack_require__.r(__webpack_exports__);
     title: {
       type: String,
       "default": ''
+    },
+    bgColor: {
+      type: String,
+      "default": '#efefef'
+    },
+    borderColor: {
+      type: String,
+      "default": '#efefef'
+    },
+    color: {
+      type: String,
+      "default": '#000000'
     }
   },
   data: function data() {
@@ -176,9 +188,7 @@ __webpack_require__.r(__webpack_exports__);
   pageResume: function pageResume() {
     eeuiLog.log('get query: ', app.config.params.type);
   },
-  pagePause: function pagePause() {
-    eeuiLog.log('detail hide');
-  }
+  pagePause: function pagePause() {}
 });
 
 /***/ }),
@@ -191,9 +201,6 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports) {
 
 module.exports = {
-  "detail": {
-    "flex": 1
-  },
   "content": {
     "flex": 1,
     "display": "flex",
@@ -224,18 +231,15 @@ module.exports = {
   "navbar": {
     "width": "750",
     "height": "100",
-    "backgroundColor": "#f6f7f9",
     "borderBottomStyle": "solid",
-    "borderWidth": "1",
-    "borderColor": "#f1f0f0"
+    "borderWidth": "1"
   },
   "icon": {
     "width": "100",
     "height": "100"
   },
   "title": {
-    "color": "#000000",
-    "fontSize": "30"
+    "fontSize": "35"
   }
 }
 
@@ -289,7 +293,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: ["topbar"]
   }, [_c('navbar', {
-    staticClass: ["navbar"]
+    staticClass: ["navbar"],
+    style: {
+      backgroundColor: _vm.bgColor,
+      borderColor: _vm.borderColor
+    }
   }, [_c('navbar-item', {
     attrs: {
       "type": "left"
@@ -301,6 +309,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('icon', {
     staticClass: ["icon"],
+    style: {
+      color: _vm.color
+    },
     attrs: {
       "content": "ios-arrow-back",
       "fontSize": "46"
@@ -310,7 +321,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "title"
     }
   }, [_c('text', {
-    staticClass: ["title"]
+    staticClass: ["title"],
+    style: {
+      color: _vm.color
+    }
   }, [_vm._v(_vm._s(_vm.title))])])], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true

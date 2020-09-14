@@ -4,6 +4,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 var eeui = app.requireModule('eeui');
 var modal = app.requireModule('modal');
+var configUrl = 'https://lnrapp.xianglu-china.com';
 Vue.mixin({
   data: function data() {
     return {};
@@ -35,11 +36,11 @@ Vue.mixin({
   },
   methods: {
     go: function go(key) {
-      var barColor = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '#2c3e50';
-      var barStyle = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      var barColor = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '#efefef';
+      var barStyle = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
       var obj = {
         statusBarColor: barColor,
-        barStyle: true,
+        statusBarStyle: barStyle,
         animatedType: 'push'
       };
 
@@ -81,7 +82,7 @@ Vue.mixin({
       // }
       // Object.assign(compleForm, presetForm)
 
-      var transUrl = url.indexOf("http") !== -1 ? url : config.api_url + url;
+      var transUrl = url.indexOf("http") !== -1 ? url : configUrl + url;
       return new Promise(function (resolve) {
         eeui.ajax({
           url: transUrl,
@@ -166,30 +167,35 @@ Vue.mixin({
 
         if (!item.key || item.key.match(/^[ ]+$/)) {
           err[item.type] = true;
-          return err.msg = '请填写' + item.name;
+          err.msg = '请填写' + item.name;
+          return true;
         } // 验证姓名
 
 
         if (item.type === 'name' && (!/^[\u4e00-\u9fa5]+$/.test(item.key) || item.key.length < 2)) {
           err[item.type] = true;
-          return err.msg = '请输入正确的' + item.name;
+          err.msg = '请输入正确的' + item.name;
+          return true;
         } // 验证手机号
 
 
         if (item.type === 'phone' && !(item.key.length === 11 && /^((13|14|15|17|18|19)[0-9]{1}\d{8})$/.test(item.key))) {
           err[item.type] = true;
-          return err.msg = '请输入正确的' + item.name;
+          err.msg = '请输入正确的' + item.name;
+          return true;
         } // 验证身份证号
 
 
         if (item.type === 'idCard' && !/^\d{6}(19|20)?\d{2}(0[1-9]|1[012])(0[1-9]|[12]\d|3[01])\d{3}(\d|X)$/i.test(item.key)) {
           err[item.type] = true;
-          return err.msg = '请输入正确的' + item.name;
+          err.msg = '请输入正确的' + item.name;
+          return true;
         } // 验证金额
 
 
         if (item.type === 'price' && (!Number.isFinite(Number(item.key)) || Number(item.key) <= 0 || item.key.split('.')[1] && item.key.split('.')[1].length > 2)) {
-          err = '请输入正确的' + item.name;
+          err.msg = '请输入正确的' + item.name;
+          return true;
         }
       });
       return Object.keys(err).length ? err : '';
