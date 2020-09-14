@@ -1,7 +1,7 @@
 <template lang="pug">
   scroller.my
-    .text my
-    .text token:{{token}}
+    text.text my
+    text.text token:{{token}}
     image.logo(src="root://assets/logo-white.png")
     button.btn(model="red" text="退出登录" @click="logout()")
 </template>

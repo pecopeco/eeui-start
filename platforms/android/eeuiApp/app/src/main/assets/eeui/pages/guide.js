@@ -223,7 +223,9 @@ __webpack_require__.r(__webpack_exports__);
   },
   pageResume: function pageResume() {// this.getData()
   },
-  pagePause: function pagePause() {}
+  pagePause: function pagePause() {
+    clearInterval(this.timer);
+  }
 });
 
 /***/ }),

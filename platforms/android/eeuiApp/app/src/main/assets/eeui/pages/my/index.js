@@ -264,11 +264,11 @@ module.exports = {
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  return _c('scroller', {
     staticClass: ["my"]
-  }, [_c('div', {
+  }, [_c('text', {
     staticClass: ["text"]
-  }, [_vm._v("my")]), _c('div', {
+  }, [_vm._v("my")]), _c('text', {
     staticClass: ["text"]
   }, [_vm._v("token:" + _vm._s(_vm.token))]), _c('image', {
     staticClass: ["logo"],

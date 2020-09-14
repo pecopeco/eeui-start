@@ -177,6 +177,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
@@ -209,6 +210,13 @@ module.exports = {
     "display": "flex",
     "alignItems": "center",
     "justifyContent": "center"
+  },
+  "wrap": {
+    "display": "flex",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "width": "200",
+    "height": "120"
   },
   "btn": {
     "width": "200",
@@ -264,11 +272,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('div', {
     staticClass: ["content"]
-  }, [_c('div', {
+  }, [_c('ripple', {
+    staticClass: ["wrap"]
+  }, [_c('text', {
     staticClass: ["text"]
-  }, [_vm._v("detail")]), _c('div', {
+  }, [_vm._v("detail")]), _c('text', {
     staticClass: ["query"]
-  }, [_vm._v("get:" + _vm._s(_vm.type))]), _c('button', {
+  }, [_vm._v("get:" + _vm._s(_vm.type))])]), _c('button', {
     staticClass: ["btn"],
     attrs: {
       "model": "blue",

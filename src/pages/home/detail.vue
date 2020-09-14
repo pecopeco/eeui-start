@@ -2,8 +2,9 @@
   .detail
     headnav(title="detail")
     .content
-      .text detail
-      .query get:{{type}}
+      ripple.wrap
+        text.text detail
+        text.query get:{{type}}
       button.btn(model="blue" text="go back" @click="goBack()")
 </template>
 
@@ -37,6 +38,13 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 120px;
 }
 .btn {
   width: 200px;
