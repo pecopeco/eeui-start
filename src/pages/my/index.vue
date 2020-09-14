@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my
+  scroller.my
     .text my
     .text token:{{token}}
     image.logo(src="root://assets/logo-white.png")

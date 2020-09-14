@@ -1,5 +1,5 @@
 <template lang="pug">
-  .home
+  scroller.home
     .text home
     image.logo(src="root://assets/logo-white.png")
     button.btn(model="blue" text="go detail" @click="go({path: '/home/detail', query: {type: 'home'}})")
