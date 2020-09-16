@@ -88,8 +88,8 @@ Vue.mixin({
               requestUrl = ''
               requestForm = {}
             }, 300)
-            this.toast('错误请求：' + res.result)
-            console.log('错误请求：' + res.result)
+            this.toast('错误请求：' + url + ' ' + res.code)
+            console.log('错误请求：' + url + ' ' + res.code)
             resolve(false)
           }
         })
