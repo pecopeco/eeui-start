@@ -5,7 +5,7 @@
       ripple.wrap
         text.text detail
         text.query get:{{type}}
-      htmlParse(:content="content")
+      htmlParse.html-content(:content="content")
       button.btn(model="blue" text="go back" @click="goBack()")
 </template>
 
@@ -48,6 +48,10 @@ export default {
   justify-content: center;
   width: 200px;
   height: 120px;
+}
+.html-content {
+  flex: 1;
+  padding: 25px;
 }
 .btn {
   width: 200px;
