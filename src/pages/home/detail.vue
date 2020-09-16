@@ -5,17 +5,20 @@
       ripple.wrap
         text.text detail
         text.query get:{{type}}
+      htmlParse(:content="content")
       button.btn(model="blue" text="go back" @click="goBack()")
 </template>
 
 <script>
+import htmlParse from "../../components/htmlParse.vue"
 
 export default {
   components: {
   },
   data () {
     return {
-      type: app.config.params.type
+      type: app.config.params.type,
+      content: '<span>good</span>'
     }
   },
   methods: {
